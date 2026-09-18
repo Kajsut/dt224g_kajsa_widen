@@ -1,0 +1,33 @@
+/* Sandvit: #E5DAD0   Ljusgrön: #A9B4A4   Mörkgrön: #80916D*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inconsolata', 'consolas', 'monospace'; 
+    background-color: #E5DAD0; 
+}
+
+
+
+.activities {
+    background-color: #A9B4A4;
+    
+}
+
+.button {
+    display: inline-block;
+    background: #80916D;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color:#3a4b27;
+}
+
+footer {
+    background-color: #A9B4A4;
+
+}
