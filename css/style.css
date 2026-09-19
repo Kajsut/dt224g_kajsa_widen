@@ -13,6 +13,21 @@ header {
     /*Får klura på detta*/
 }
 
+/* Hur länkarna i headen ser ut och beteer sig*/
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+
 
 /* Bilder på och text på de tre aktiviteterna*/
 .activities {
@@ -45,6 +60,7 @@ header {
 }
 
 
+
 /*Knappar utseende och övergångar*/
 .button {
     display: inline-block;
@@ -75,6 +91,8 @@ footer img {
     height: 5rem;
 }
 
+
+/* Hur länkarna i footen ser ut och beteer sig*/
 footer ul {
     list-style-type: none;
 }
