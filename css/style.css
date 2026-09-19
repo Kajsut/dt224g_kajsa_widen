@@ -7,12 +7,52 @@
 }
 
 
-
-.activities {
-    background-color: #A9B4A4;
-    
+header {
+    display: flex;
+    flex-direction: row;
+    /*Får klura på detta*/
 }
 
+body {
+
+}
+
+
+
+/* Bilder på och text på de tre aktiviteterna*/
+.activities {
+    background-color: #A9B4A4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    /*om ett foto blir mindre än 300px så läggder de sig under varandra*/
+}
+
+
+.picture_text img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.picture_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+
+/*Knappar utseende och övergångar*/
 .button {
     display: inline-block;
     background: #80916D;
@@ -26,6 +66,8 @@
 .button:hover {
     background-color:#3a4b27;
 }
+
+
 
 footer {
     background-color: #A9B4A4;
