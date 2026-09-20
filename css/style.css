@@ -63,6 +63,7 @@ header a:hover {
         margin-right: 3rem;
     /*nav är ett direkt barn till header, det är inte ul*/
     }
+
     header ul {
     list-style-type: none;
     display: flex;
@@ -70,8 +71,14 @@ header a:hover {
 }
 }
 
+/* Rubrik, text och bilder på de tre aktiviteterna*/
+.h2-activities {
+    background-color: #A9B4A4;
+    margin-bottom: 0%;
+    padding-top:2rem;
+    text-align: center;
+}
 
-/* Bilder på och text på de tre aktiviteterna*/
 .activities {
     background-color: #A9B4A4;
     display: grid;
@@ -101,7 +108,32 @@ header a:hover {
     flex-grow: 1;
 }
 
+/*Planera ditt besök*/
+@media (min-width:800px){
+.visit p {
+    text-align: left;
+    width: 50%;
+    margin-left: 20%;
+}
 
+.visit h2 {
+    text-align: left;
+    width: 50%;
+    margin-left: 20%;
+}
+
+.visit-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-visit {
+    /*justify-content: space-around;     detta blir för långt till höger*/
+    /*margin-right: 20rem;    blir två rader text i knappen*/
+
+}
+}
 
 /*Knappar utseende och övergångar*/
 .button {
