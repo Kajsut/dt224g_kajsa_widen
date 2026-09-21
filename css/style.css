@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Inconsolata', 'consolas', 'monospace'; 
     background-color: #E5DAD0; 
+    margin: 0;
 }
 
 header {
@@ -38,8 +39,9 @@ header a:hover {
 }
 
 
-/*Headen i liten och stor skärm*/
+
 @media (max-width: 800px){ /*800px eller mindre*/
+    /*Headen i liten skärm*/
     header {   
         display: flex;
         flex-direction: column;
@@ -53,25 +55,26 @@ header a:hover {
         gap: 20px;
         margin-left: 4rem;
     }
+
+
 }
 
 @media (min-width: 800px){ /*800px eller större*/
-    
+    /*Header i stor skärm*/
     header nav {
         display: flex;
         width: 100%;
         justify-content: flex-end;
         margin-right: 3rem;
-    /*nav är ett direkt barn till header, det är inte ul*/
     }
 
     header ul {
     list-style-type: none;
     display: flex;
     gap: 3rem;    
+    }
 
-}
-/*Hero bild och text uppepå*/
+    /*Hero bild och text uppepå*/
     .hero-text img {
         display: none;
     }
@@ -95,14 +98,49 @@ header a:hover {
         background: fixed;
         color: white;
         padding-left: 6rem;
+        margin: 1rem auto;
     }
 
     .hero-text-button{
         margin-left: 6rem;
         margin-bottom: 7rem;
     }
+
+    /*Nära till naturen*/
+    .nature {
+    text-align: center;
+    max-width: 500px;
+    margin: 3rem auto;
+    }
 }
 
+/*hero på liten skärm*/
+@media (max-width: 800px){
+    /*Herobild och text nedanför liten skärm*/
+    .hero-text img {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero-text {
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .hero-text p {
+        margin: 1rem auto;
+    }
+
+    /*Nära till naturen*/
+    .nature {
+        text-align: center;
+        max-width: 500px;
+        margin: 3rem 2rem;
+        
+    }
+}
 
 /* Rubrik, text och bilder på de tre aktiviteterna*/
 .h2-activities {
@@ -141,18 +179,32 @@ header a:hover {
     flex-grow: 1;
 }
 
-/*Planera ditt besök*/
-@media (min-width:800px){
-.visit p {
-    text-align: left;
-    width: 50%;
-    margin-left: 20%;
+/*Planera - liten skärm*/
+@media (max-width:800px){
+    .visit {
+        text-align: center;
+        max-width: 500px;
+        margin: 3rem 2rem;
+        
+    }
+    .visit-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+}
+    .visit p {
+        margin-top: 1rem;
+    }
 }
 
-.visit h2 {
+/*Planera ditt besök - stor skärm*/
+@media (min-width:800px){
+.visit {
     text-align: left;
     width: 50%;
-    margin-left: 20%;
+    margin: 3rem auto 3rem 20%;
 }
 
 .visit-button {
@@ -161,9 +213,10 @@ header a:hover {
     align-items: center;
 }
 
+
 .button-visit {
-    /*justify-content: space-around;     detta blir för långt till höger*/
-    /*margin-right: 20rem;    blir två rader text i knappen*/
+    justify-content: space-around;
+    margin-right: 20rem;
 
 }
 }
