@@ -39,9 +39,9 @@ header a:hover {
 }
 
 
-
-@media (max-width: 800px){ /*800px eller mindre*/
-    /*Headen i liten skärm*/
+/*Regler till liten skärm*/
+@media (max-width: 800px){ 
+    /*Headen*/
     header {   
         display: flex;
         flex-direction: column;
@@ -56,11 +56,56 @@ header a:hover {
         margin-left: 4rem;
     }
 
+    /*Herobild och text nedanför*/
+    .hero-text img {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero-text {
+        text-align: center;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .hero-text p {
+        margin: 1rem auto;
+    }
+
+    /*Nära till naturen*/
+    .nature {
+        text-align: center;
+        max-width: 500px;
+        margin: 3rem 2rem;
+        
+    }
+
+    /*Planera ditt besök*/
+    .visit {
+        text-align: center;
+        max-width: 500px;
+        margin: 3rem 2rem;
+        
+    }
+
+    .visit-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    }
+
+    .visit p {
+        margin-top: 1rem;
+    }
 
 }
 
-@media (min-width: 800px){ /*800px eller större*/
-    /*Header i stor skärm*/
+
+/* Regler till stor skärm */
+@media (min-width: 800px){ 
+    /*Header*/
     header nav {
         display: flex;
         width: 100%;
@@ -112,35 +157,29 @@ header a:hover {
     max-width: 500px;
     margin: 3rem auto;
     }
+
+    /*Planera ditt besök*/
+    .visit {
+        text-align: left;
+        width: 50%;
+        margin: 3rem auto 3rem 20%;
+    }
+
+    .visit-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .button-visit {
+        justify-content: space-around;
+        margin-right: 20rem;
+
+    }
+
 }
 
-/*hero på liten skärm*/
-@media (max-width: 800px){
-    /*Herobild och text nedanför liten skärm*/
-    .hero-text img {
-        width: 100%;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-
-    .hero-text {
-        text-align: center;
-        max-width: 500px;
-        margin: auto;
-    }
-
-    .hero-text p {
-        margin: 1rem auto;
-    }
-
-    /*Nära till naturen*/
-    .nature {
-        text-align: center;
-        max-width: 500px;
-        margin: 3rem 2rem;
-        
-    }
-}
 
 /* Rubrik, text och bilder på de tre aktiviteterna*/
 .h2-activities {
@@ -179,47 +218,6 @@ header a:hover {
     flex-grow: 1;
 }
 
-/*Planera - liten skärm*/
-@media (max-width:800px){
-    .visit {
-        text-align: center;
-        max-width: 500px;
-        margin: 3rem 2rem;
-        
-    }
-    .visit-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-    
-}
-    .visit p {
-        margin-top: 1rem;
-    }
-}
-
-/*Planera ditt besök - stor skärm*/
-@media (min-width:800px){
-.visit {
-    text-align: left;
-    width: 50%;
-    margin: 3rem auto 3rem 20%;
-}
-
-.visit-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-
-.button-visit {
-    justify-content: space-around;
-    margin-right: 20rem;
-
-}
-}
 
 /*Knappar utseende och övergångar*/
 .button {
