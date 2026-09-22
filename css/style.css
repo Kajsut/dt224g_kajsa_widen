@@ -321,9 +321,6 @@ footer img {
 footer h3 {
     background-color: #A9B4A4;
 }
-.h3links {
-    background-color: #A9B4A4;
-}
 footer p {
     background-color: #A9B4A4;
 }
@@ -434,7 +431,7 @@ footer li {
         margin-left: 20rem;
         width: 7rem;
         height: 7rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 3rem;
     }
 
     .name {
@@ -443,7 +440,14 @@ footer li {
     }
 
     .contact-links {
-        
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 4rem;
     }
 
+    footer h3 {
+        padding-bottom: 1rem;
+    }
 }
