@@ -1,9 +1,15 @@
 /* Sandvit: #E5DAD0   Ljusgrön: #A9B4A4   Mörkgrön: #80916D*/
+:root {
+    --background-white: #E5DAD0;
+    --background-green: #A9B4A4;
+    --button-color: #6B775A;
+    --button-hover: #313e22;
+}
 
 * {
     box-sizing: border-box;
     font-family: 'Inconsolata', 'consolas', 'monospace'; 
-    background-color: #E5DAD0; 
+    background-color: var(--background-white); 
     margin: 0;
 }
 
@@ -37,8 +43,6 @@ header a {
 header a:hover {
     text-decoration: underline;
 }
-
-
 
     /*Headen*/
 header {   
@@ -79,163 +83,16 @@ header ul {
     margin: 3rem 2rem;
         }
 
-    /*Planera ditt besök*/
-.visit {
-    text-align: center;
-    max-width: 500px;
-    margin: 3rem 2rem;
-        
-}
-
-.visit-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.visit p {
-    margin-top: 1rem;
-}
-
-    /*Hur footen ser ut*/
-footer img {
-    width: 20%;
-    display: block;
-    margin: auto;
-    padding-top: 1rem;
-}
-.name {
-    text-align: center;
-    margin: 1rem auto 3rem auto;
-}
-.contact-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 2rem;
-    background-color: #A9B4A4;
-}
-
-
-
-/* Regler till stor skärm */
-/*@media (min-width: 800px){ 
-    /*Header*/
-/*    header nav {
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        margin-right: 3rem;
-    }
-
-    header ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;    
-    }
-
-    /*Hero bild och text uppepå*/
-/*    .hero-text img {
-        display: none;
-    }
-
-    .hero-text {
-        background-image: url("../images/hero.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-    }
-
-    .hero-text h1 {
-        background: fixed;
-        color: white;
-        padding-left: 6rem;
-        padding-top: 14rem;
-    }
-
-    .hero-text p {
-        background: fixed;
-        color: white;
-        padding-left: 6rem;
-        margin: 1rem auto;
-    }
-
-    .hero-text-button{
-        margin-left: 6rem;
-        margin-bottom: 7rem;
-    }
-
-    /*Nära till naturen*/
-/*    .nature {
-    text-align: center;
-    max-width: 500px;
-    margin: 3rem auto;
-    }
-
-
-    .picture_text {
-        padding: auto 10rem;
-        
-    }
-
-    /*Planera ditt besök*/
-/*    .visit {
-        text-align: left;
-        width: 50%;
-        margin: 3rem auto 3rem 20%;
-    }
-
-    .visit-button {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-
-    .button-visit {
-        justify-content: space-around;
-        margin-right: 20rem;
-
-    }
-
-    /*Hur footer ser ut*/
-/*    footer {
-        display: flex;
-        justify-content: space-evenly;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
-    footer img {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .namelogo {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .h3links {
-        
-    }
-}
-
-
 /* Rubrik, text och bilder på de tre aktiviteterna*/
 .h2-activities {
-    background-color: #A9B4A4;
+    background-color: var(--background-green);
     margin-bottom: 0%;
     padding-top:2rem;
     text-align: center;
 }
 
 .activities {
-    background-color: #A9B4A4;
+    background-color: var(--background-green);
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     /*om ett foto blir mindre än 300px så läggder de sig under varandra*/
@@ -263,11 +120,48 @@ footer img {
     flex-grow: 1;
 }
 
+/*Planera ditt besök*/
+.visit {
+    text-align: center;
+    max-width: 500px;
+    margin: 3rem 2rem;
+        
+}
+
+.visit-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.visit p {
+    margin-top: 1rem;
+}
+
+/*Hur footen ser ut*/
+footer img {
+    width: 20%;
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
+}
+.name {
+    text-align: center;
+    margin: 1rem auto 3rem auto;
+}
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    background-color: var(--background-green);
+}
 
 /*Knappar utseende och övergångar*/
 .button {
     display: inline-block;
-    background: #80916D;
+    background: var(--button-color);
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -276,21 +170,22 @@ footer img {
 }
 
 .button:hover {
-    background-color:#3a4b27;
+    background-color:var(--button-hover);
 }
 
 /* Hur länkarna i footen ser ut och beteer sig*/
 footer ul {
     list-style-type: none;
     padding: 0;
-    background-color: #A9B4A4;
+    background-color: var(--background-green);
 }
 
 footer a {
     color:rgb(0, 0, 0);
-    background-color: #A9B4A4;
+    background-color: var(--background-green);
 }
 
+.phonenumber:hover,
 footer a:hover {
     font-weight: bold;
 }
@@ -312,30 +207,17 @@ hr {
 }
 
 /*Allt i footen grön*/
-.namelogo {
-    background-color: #A9B4A4;
-}
-footer img {
-    background-color: #A9B4A4;
-}
-footer h3 {
-    background-color: #A9B4A4;
-}
-footer p {
-    background-color: #A9B4A4;
-}
-footer {
-    background-color: #A9B4A4;
-}
-footer li {
-    background-color: #A9B4A4;
-}
-.contact {
-    background-color: #A9B4A4;
-}
+.namelogo,
+footer img,
+footer h3,
+footer p,
+footer,
+footer li,
+.contact,
 .name {
-    background-color: #A9B4A4;
+    background-color: var(--background-green);
 }
+
 
 @media (min-width: 800px) {
     hr {
