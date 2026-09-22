@@ -281,6 +281,12 @@ footer li,
         margin: 2rem auto;
     }
 
+    /*De tre korten ska vara i mitten*/
+    .activities {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
     /*Planera ditt besök*/
     .visit-button {
         flex-direction: row;
