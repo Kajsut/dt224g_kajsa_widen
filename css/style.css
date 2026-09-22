@@ -1,4 +1,3 @@
-/* Sandvit: #E5DAD0   Ljusgrön: #A9B4A4   Mörkgrön: #80916D*/
 :root {
     --background-white: #E5DAD0;
     --background-green: #A9B4A4;
@@ -11,12 +10,6 @@
     font-family: 'Inconsolata', 'consolas', 'monospace'; 
     background-color: var(--background-white); 
     margin: 0;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 /*img och texten i headen*/
@@ -44,7 +37,7 @@ header a:hover {
     text-decoration: underline;
 }
 
-    /*Headen*/
+/*Headen*/
 header {   
     display: flex;
     flex-direction: column;
@@ -81,7 +74,11 @@ header ul {
     text-align: center;
     max-width: 500px;
     margin: 3rem 2rem;
-        }
+}
+
+.nature h2 {
+    margin-bottom: 1rem;
+}
 
 /* Rubrik, text och bilder på de tre aktiviteterna*/
 .h2-activities {
@@ -146,10 +143,12 @@ footer img {
     margin: auto;
     padding-top: 1rem;
 }
+
 .name {
     text-align: center;
     margin: 1rem auto 3rem auto;
 }
+
 .contact-links {
     display: flex;
     flex-direction: row;
@@ -263,13 +262,11 @@ footer li,
         background: fixed;
         color: white;
         padding-top: 14rem;
-        
     }
 
     .hero-text p {
         background: fixed;
         color: white;
-
     }
 
     .hero-text-button {
