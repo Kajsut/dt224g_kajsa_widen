@@ -42,6 +42,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    overflow-x: hidden;
 }
     
 header ul {
@@ -194,6 +195,19 @@ footer a:hover {
 }
 
 /*Dekorationssträcken*/
+ header li {
+    position: relative;
+}
+
+header li::before {
+    content:"";
+    position: absolute;
+    border-top: 1px solid #BFB7B7;
+    left: -7rem;
+    right: -18rem;
+}
+padding-top: 0.5rem;
+
 hr {
     color: #BFB7B7;
     margin: 0;
@@ -222,7 +236,9 @@ footer li,
     hr {
         display: none;
     }
-
+    li {
+        border-top: none;
+    }
     /*Header*/
     header nav {
         display: flex;
