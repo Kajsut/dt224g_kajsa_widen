@@ -44,7 +44,7 @@ header {
     align-items: flex-start;
     overflow-x: hidden;
 }
-    
+
 header ul {
     display: flex;
     flex-direction: column;
@@ -140,6 +140,7 @@ header ul {
 /*Hur footen ser ut*/
 footer img {
     width: 20%;
+    height: 20%;
     display: block;
     margin: auto;
     padding-top: 1rem;
@@ -197,6 +198,8 @@ footer a:hover {
 /*Dekorationssträcken*/
  header li {
     position: relative;
+    margin: 0.3rem;
+    
 }
 
 header li::before {
@@ -205,13 +208,12 @@ header li::before {
     border-top: 1px solid #BFB7B7;
     left: -7rem;
     right: -18rem;
+    top: -0.7rem;
+    
 }
-padding-top: 0.5rem;
 
 hr {
     color: #BFB7B7;
-    margin: 0;
-    width: 100vw;
     margin-left: calc(50% - 50vw);
 }
 
@@ -233,11 +235,13 @@ footer li,
 
 
 @media (min-width: 800px) {
+    /*Tar bort dekorsträcken*/
     hr {
         display: none;
     }
-    li {
-        border-top: none;
+    
+    header li::before {
+        display: none;
     }
     /*Header*/
     header nav {
@@ -352,3 +356,4 @@ footer li,
         padding-bottom: 1rem;
     }
 }
+
