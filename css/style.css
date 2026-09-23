@@ -126,7 +126,7 @@ header ul {
         
 }
 
-.visit-button {
+.section-visit {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,8 +208,7 @@ header li::before {
     border-top: 1px solid #BFB7B7;
     left: -7rem;
     right: -18rem;
-    top: -0.7rem;
-    
+    top: -0.7rem; 
 }
 
 hr {
@@ -232,7 +231,6 @@ footer li,
 .name {
     background-color: var(--background-green);
 }
-
 
 @media (min-width: 800px) {
     /*Tar bort dekorsträcken*/
@@ -305,7 +303,7 @@ footer li,
     }
 
     /*Planera ditt besök*/
-    .visit-button {
+    .section-visit {
         flex-direction: row;
         align-content: space-around;
     }
@@ -356,4 +354,3 @@ footer li,
         padding-bottom: 1rem;
     }
 }
-
