@@ -6,7 +6,7 @@ Detta 채r bara startsidan, s책 du kommer ingen vart om du trycker p책 knappar/l�
 Hemsidan 채r byggt med HTML och CSS.
 
 ## L채nkar till hemsidan
-[Github](https://kajsut.github.io/dt224g_kajsa_widen/)
+[Github](https://kajsut.github.io/dt224g_kajsa_widen/) ,
 [Netlify](https://norrglatan.netlify.app/)
 
 ## L채nk till mockup
